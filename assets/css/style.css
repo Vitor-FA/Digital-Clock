@@ -1,0 +1,92 @@
+@font-face{
+  font-family:'digital-clock-font';
+  src: url('../font/digital-7.ttf');
+}
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  background: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#date {
+  display: flex;
+  justify-content: center;
+}
+
+#clock {
+  font-family:'digital-clock-font';
+  display: flex;
+  justify-content: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #date {
+    font-size: 20px;
+    }
+    
+  #clock {
+    font-size: 90px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #date {
+    font-size: 30px;
+  }
+      
+  #clock {
+    font-size: 150px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #date {
+    font-size: 40px;
+  }
+      
+  #clock {
+    font-size: 200px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #date {
+    font-size: 55px;
+  }
+      
+  #clock {
+    font-size: 260px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #date {
+    font-size: 65px;
+  }
+      
+  #clock {
+    font-size: 320px;
+  }
+}
